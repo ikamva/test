@@ -1,0 +1,13 @@
+1. Scrapy: All the files share the Scrapy library as a dependency. Scrapy is used for web scraping in Python and is used across all the files for various functionalities.
+
+2. RedditScraperItem: Defined in "items.py", this class is used in "reddit_scraper.py" and "reddit_spider.py" to structure the data that is being scraped from Reddit.
+
+3. JsonWriterPipeline: Defined in "pipelines.py", this class is used in "reddit_scraper.py" and "settings.py" to handle the storage of scraped data in a structured JSON format.
+
+4. RedditSpider: Defined in "reddit_spider.py", this class is used in "reddit_scraper.py" to handle the actual scraping of data from Reddit, including handling pagination and dynamic content.
+
+5. Settings: Defined in "settings.py", these settings are used in "reddit_scraper.py" and "reddit_spider.py" to configure the behavior of the Scrapy tool.
+
+6. DOM Elements: The specific DOM elements to be scraped are defined in "reddit_spider.py" and used in "reddit_scraper.py". These would include elements like post titles, author names, upvote counts, etc.
+
+7. Output.json: This is the file where the scraped data is stored in a structured format. It is created and written to by the "pipelines.py" file and is the end product of the "reddit_scraper.py" script.
